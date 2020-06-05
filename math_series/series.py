@@ -1,4 +1,7 @@
 def fibonacci(n):
+    """
+    This function will return the nth number in the fibonacci sequence
+    """
     if n == 0:
         return 0
     elif n == 1:
@@ -8,6 +11,9 @@ def fibonacci(n):
 
 
 def lucas(n):
+    """
+    This function will return the nth number in the lucas sequence
+    """
     if n == 0:
         return 2
     elif n == 1:
@@ -19,6 +25,11 @@ def lucas(n):
 # https://linux.die.net/diveintopython/html/power_of_introspection/optional_arguments.html 
 # helped me with optional parameters
 def sum_series(n, first=0, second=1):
+    """
+    This function will return the nth number in an arbitrary sum sequence.
+    If no arguments are given for the first and second values, the default
+    arguments are first=0 and second=1 (the fibonacci sequence).
+    """
     if n == 0:
         return first
     elif n == 1:
